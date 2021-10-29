@@ -8,6 +8,7 @@ import {IProduct} from '../components/Product'
 import { GetStaticProps } from 'next'
 
 import iphone from '../public/iphone.png'
+import Satisfaction from '../components/Satisfaction'
 
 interface IProductListProps {
   products: IProduct[]
@@ -26,6 +27,7 @@ export default function Home({products}: IProductListProps) {
         <Jumbotron/>
         <ProductList products={products} />
         <Contact/>
+        <Satisfaction/>
       </main>
       <Script src="https://cdn.snipcart.com/themes/v3.2.0/default/snipcart.js"/>
       <div hidden id="snipcart" data-api-key="OWNlZTNlYmItZTU5OS00MmI4LThjOTAtMjY0NzAyYmI2ODAxNjM3NjIyMjY3MDMxMTIzMzUx"></div>

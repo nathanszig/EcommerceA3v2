@@ -1,0 +1,25 @@
+@use 'mixins';
+
+.satisfaction {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-size: 36px;
+    
+        .colored {
+          font-size: inherit;
+          color: mixins.$color-purple;
+        }
+      }
+    div{
+        transform: scale(1.5);
+    }
+    p{
+        display: none;
+    }
+}
