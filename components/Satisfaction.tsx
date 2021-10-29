@@ -1,8 +1,10 @@
+// @ts-ignore
 import ReactStars from "react-rating-stars-component";
 import Styles from "../styles/Satisfaction.module.scss"
-const ratingChanged = (newRating) => {
+const ratingChanged = (newRating: number) => {
     console.log(newRating);
-    var p = document.querySelector("#merci")
+    const p = document.getElementById("merci")
+    if (p == null) throw "Error with query selector"
     p.style.display = "block"
     console.log("p")
   };
